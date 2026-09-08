@@ -21,7 +21,7 @@
     },
     {
       "parameters": {
-        "chatId": "={{ $json.adminTelegramId || '5437246207' }}",
+        "chatId": "={{ $json.adminTelegramId || '8965842613' }}",
         "text": "=🔥 <b>NEW BOOKING LEAD / NEED ADMIN HANDOVER</b>\n\n👤 <b>Customer:</b> {{ $json.customerName }} (@{{ $json.username }})\n🆔 <b>Telegram ID:</b> <code>{{ $json.fromId }}</code>\n💬 <b>Pesan Terakhir:</b> {{ $json.lastMessage }}\n🤖 <b>AI Context:</b> Handover dipicu otomatis\n\n👉 <i>Silakan hubungi customer ini untuk menindaklanjuti reservasi.</i>",
         "additionalFields": {
           "parse_mode": "HTML"

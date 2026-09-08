@@ -81,9 +81,9 @@ CREATE TABLE IF NOT EXISTS booking_leads (
 -- SEED DATA INITIALIZATION
 -- =============================================================================
 
--- Seed Admin (Madam Tika Admin ID)
+-- Seed Admin (Madam Vita Admin ID)
 INSERT INTO admins (telegram_id, name, role) 
-VALUES (5437246207, 'Madam Tika Admin', 'super_admin')
+VALUES (8965842613, 'Madam Vita Admin', 'super_admin')
 ON CONFLICT (telegram_id) DO NOTHING;
 
 -- Seed Outlets
@@ -132,7 +132,7 @@ Sanksi pelanggaran: Pemutusan layanan tanpa refund, denda, dan BLACKLIST PERMANE
 ('applymember', 'Registrasi Member EL Group', 
 '🪪 Registrasi Member EL Group:
 Ada kak 😊
-Untuk informasi mengenai keuntungan member, syarat dan ketentuan, cara pendaftaran, dan benefit member, silakan sebutkan outlet yang ingin dikunjungi.
+Untuk pendaftaran member resmi EL Group, silakan kirim data ke Telegram @spakaraoke.
 Member digital resmi: https://app.elgroupapp.com/', 'member, membership, daftar, benefit, kartu member'),
 
 ('estafet', 'Paket Estafet', 
@@ -169,7 +169,7 @@ Member digital resmi: https://app.elgroupapp.com/', 'member, membership, daftar,
 ('promo', 'Informasi Promo, Diskon & Event Harian', 
 'Ada kak 😊 Promo dan update harian selalu kami bagikan di Grup Telegram resmi kami!
 
-🔗 Join Grup Telegram: https://t.me/spakaraokejakartapusat
+🔗 Join Grup Telegram: https://t.me/spajakartavip
 
 Silakan gabung agar tidak ketinggalan info diskon & promo terbaru ya kak ✨', 'promo, diskon, discount, potongan, event, promo hari ini, promo malam ini, voucher'),
 
@@ -192,23 +192,18 @@ Ketersediaan area parkir menyesuaikan kondisi di masing-masing outlet.', 'parkir
 'Tentu bisa kak 😊
 Namun kami sangat menyarankan melakukan reservasi terlebih dahulu agar room dan kebutuhan layanan dapat dipersiapkan.
 Jika datang langsung tanpa reservasi, ketersediaan room dan layanan akan menyesuaikan kondisi yang tersedia di outlet saat kedatangan.
-Untuk mendapatkan QR, kakak bisa menghubungi:
-@Elgroupspa_bot', 'walk-in, datang langsung, tanpa booking, tanpa reservasi'),
+Untuk mendapatkan QR/Barcode, kakak bisa menghubungi:
+@EL_Group1_Bot', 'walk-in, datang langsung, tanpa booking, tanpa reservasi'),
 
 ('contact', 'Master Kontak Booking & Routing Resmi', 
 'RESERVASI & CONTACT BOOKING RESMI 🔗
 
-💙 Madam Tika (Booking Umum / Belum Sebut Cabang)
-WhatsApp: https://wa.me/qr/O6QEVDUNDJB4G1
-Telegram: @MadamTika
+💙 Madam Vita (Reservasi Seluruh Cabang EL Group)
+WhatsApp: https://wa.me/6281312464177
+Telegram: @spakaraoke
 
-💙 Kim Asst Norte (Booking EL NORTE)
-WhatsApp: https://wa.me/qr/XQRRH3QXZCZAA1
-Telegram: @kimasst
-
-💙 Dori Asst Fenix (Booking EL FENIX)
-WhatsApp: https://wa.me/qr/KSTLRQATOQ2PC1
-Telegram: @Doriasst', 'contact, kontak, admin, tika, whatsapp, wa, telegram, norte, fenix, kim, dori, cs, booking'),
+👩‍💻 CS Bot 24 Jam:
+Telegram: @EL_Group1_Bot', 'contact, kontak, admin, vita, whatsapp, wa, telegram, booking, cs'),
 
 ('lost_item', 'Barang Tertinggal / Lost and Found',
 'Jangan khawatir kak 😊
@@ -225,7 +220,7 @@ Kami akan membantu meneruskan informasi tersebut kepada tim outlet untuk pengece
 Jika kakak ingin memastikan sebelum datang, silakan sebutkan outlet yang ingin dikunjungi, nanti kami bantu informasikan.', 'ktp, usia, identitas, umur, id'),
 
 ('rekomendasi_talent', 'Informasi, Rekomendasi & Ketersediaan Talent / LC / Ladies / Therapist (Handover Admin)',
-'Mohon bersabar ya kak, untuk informasi & rekomendasi therapist/LC sudah kami teruskan dan akan segera diinfokan langsung oleh Madam Tika 🙏✨
+'Mohon bersabar ya kak, untuk informasi & rekomendasi therapist/LC sudah kami teruskan dan akan segera diinfokan langsung oleh Madam Vita 🙏✨
 [ESCALATE_QUESTION: Tanya Info/Rekomendasi Therapist/LC]', 'recomen, recomended, rekomendasi siapa, siapa yang bagus, siapa yang cantik, ladies bagus, therapist rekomen, siapa yg recomen, siapa recomended, rekomendasi ladies, rekomendasi therapist, siapa yang ready, siapa yang masuk, absen ladies, absen therapist, foto ladies, spill ladies, katalog ladies, lc bagus, lc rekomen, therapist gading, therapist centro, therapist norte, therapist fenix'),
 
 ('recruitment', 'Lowongan Kerja / Recruitment', 
@@ -240,16 +235,16 @@ Mohon membawa KTP asli saat datang untuk proses verifikasi.', 'lowongan, loker, 
 
 ('rules_sop', 'Rules Resmi & Akses Masuk Kedatangan',
 '📋 PERATURAN & KETENTUAN RESMI EL GROUP:
-1. Bagi yang mau datang ke semua outlet EL GROUP bisa langsung hubungi Madam Tika Atau Kim & Dori.
+1. Bagi yang mau datang ke semua outlet EL GROUP bisa langsung hubungi Madam Vita (@spakaraoke).
 2. Tamu bisa pilih Ladies lewat foto atau showing pilih langsung di lokasi.
 3. Dibutuhkan Reservasi & Barcode untuk akses masuk & akses lift setiap kali mau datang.
-4. Barcode di-scan di security saat kedatangan.', 'sop, barcode, lift, keamanan, security, reservasi, akses, rules, aturan'),
+4. Barcode di-scan di security saat kedatangan dan sebutkan atas nama Madam Vita.', 'sop, barcode, lift, keamanan, security, reservasi, akses, rules, aturan'),
 
-('sop_room_service', 'SOP Room Service Resmi EL Group By Madam Tika',
+('sop_room_service', 'SOP Room Service Resmi EL Group By Madam Vita',
 '⚠️ WAJIB IKUTI SOP ⚠️
 Demi kenyamanan bersama 👍🏻
 
-👑 SOP ROOM SERVICE (By Madam Tika):
+👑 SOP ROOM SERVICE (By Madam Vita):
 1. 👣 Baby shower
 2. 🪷 Massage relaxsasi sensual
 3. 🤍 Body message (BM)
@@ -299,13 +294,13 @@ Spa Massage, Karaoke, Lounge, Bar, Club
 • EL Spa Pangjay — Lt. 3
 • EL Seven Club — Lt. 2
 📌 Lokasi: Hotel Maxwell, Jl. Pangjay No.40 Jakpus
-🗺️ Maps: (Link Maps belum tersedia di KB)
+🗺️ Maps: https://g.co/kgs/XsooJhR
 
 📍 <b>EL FENIX</b>
 • EL Fenix — Lt. 10
 • EL Spa Gading — Lt. 9
 📌 Lokasi: Tower Harton City Hub, Jl. Boulevard Artha Gading Jakut
-🗺️ Maps: (Link Maps Fenix belum tersedia | Spa Gading: https://g.co/kgs/boEFS4t)
+🗺️ Maps: https://g.co/kgs/boEFS4t
 
 📍 <b>EL SEVEN CLUB</b>
 📌 Lokasi: Hotel Maxwell Lt. 2, Jl. Pangjay No.40 Jakpus

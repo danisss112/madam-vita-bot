@@ -43,13 +43,13 @@ flowchart TD
     N8N <--> PG
     N8N <--> AI
 
-    N8N -.->|Notifikasi Lead & Takeover| ADMIN[Madam Tika Admin : 5437246207]
+    N8N -.->|Notifikasi Lead & Takeover| ADMIN[Madam Vita Admin : 8965842613]
 ```
 
 ### ✨ Keunggulan Metode Ini:
 - **100% Gratis**: Tidak ada biaya per percakapan ke Meta.
 - **Bisa Pakai Nomor yang Sudah Ada**: Cukup scan QR code dari aplikasi WhatsApp di HP (WA Biasa maupun WA Business).
-- **Auto-Takeover Terintegrasi**: Jika Madam Tika membalas chat tamu dari HP, bot otomatis diam (*pause*) 5 menit.
+- **Auto-Takeover Terintegrasi**: Jika Madam Vita membalas chat tamu dari HP, bot otomatis diam (*pause*) 5 menit.
 
 ---
 
@@ -91,11 +91,11 @@ services:
     container_name: entertainment_n8n
     restart: always
     environment:
-      - N8N_HOST=${N8N_HOST:-n8n.madamtikael.id}
+      - N8N_HOST=${N8N_HOST:-n8n.madamvita.com}
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
-      - WEBHOOK_URL=https://${N8N_HOST:-n8n.madamtikael.id}/
+      - WEBHOOK_URL=https://${N8N_HOST:-n8n.madamvita.com}/
       - GENERIC_TIMEZONE=Asia/Jakarta
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       - N8N_DIAGNOSTICS_ENABLED=false
@@ -177,8 +177,8 @@ entertainment_wa    evolutionapi/evolution-api:v2.1.2    Up (healthy)
 Jika Anda menggunakan **aaPanel** atau **Nginx Reverse Proxy**:
 
 ### Opsi A: Menggunakan Subdomain (Direkomendasikan)
-1. Buat Subdomain DNS `wa.madamtikael.id` mengarah ke IP VPS Anda.
-2. Di aaPanel: **Website** ➔ **Add Site** ➔ `wa.madamtikael.id`.
+1. Buat Subdomain DNS `wa.madamvita.com` mengarah ke IP VPS Anda.
+2. Di aaPanel: **Website** ➔ **Add Site** ➔ `wa.madamvita.com`.
 3. Buka tab **Reverse Proxy** ➔ **Add Reverse Proxy**:
    - Target URL: `http://127.0.0.1:8080`
    - Sent domain: `$host`
@@ -212,7 +212,7 @@ curl -X POST http://localhost:8080/instance/create \
 ### 2. Dapatkan QR Code untuk Discan
 Buka browser Anda dan akses URL berikut:
 `http://IP-VPS-ANDA:8080/instance/connect/elgroup_bot`
-*(Ganti `IP-VPS-ANDA` dengan IP VPS Anda, atau gunakan domain `https://wa.madamtikael.id/instance/connect/elgroup_bot`)*.
+*(Ganti `IP-VPS-ANDA` dengan IP VPS Anda, atau gunakan domain `https://wa.madamvita.com/instance/connect/elgroup_bot`)*.
 
 ### 3. Scan Menggunakan WhatsApp di HP:
 1. Buka aplikasi WhatsApp di HP Anda.
@@ -342,7 +342,7 @@ Jika AI menyertakan URL gambar (misal foto cabang / price list):
 
 Logika auto-takeover WhatsApp bekerja persis seperti Telegram Business:
 
-1. **Madam Tika membalas chat tamu dari aplikasi WhatsApp di HP:**
+1. **Madam Vita membalas chat tamu dari aplikasi WhatsApp di HP:**
    - Event `MESSAGES_UPSERT` akan memiliki flag `fromMe: true`.
    - Node session akan mengupdate tabel `bot_chat_sessions`:
      ```sql
@@ -352,9 +352,9 @@ Logika auto-takeover WhatsApp bekerja persis seperti Telegram Business:
      WHERE chat_id = $1;
      ```
 2. **Bot Otomatis Diam (Paused):**
-   - Selama 5 menit sejak balasan terakhir Madam Tika, bot tidak akan membalas chat tamu tersebut.
+   - Selama 5 menit sejak balasan terakhir Madam Vita, bot tidak akan membalas chat tamu tersebut.
 3. **Auto-Resume (24/7):**
-   - Jika setelah 5 menit Madam Tika tidak membalas lagi dan tamu chat kembali, bot otomatis aktif mengambil alih.
+   - Jika setelah 5 menit Madam Vita tidak membalas lagi dan tamu chat kembali, bot otomatis aktif mengambil alih.
 
 ---
 

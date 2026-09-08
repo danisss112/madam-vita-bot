@@ -109,9 +109,9 @@ Gunakan fitur checklist markdown (`- [x]`) untuk menandai setiap langkah yang se
     - `N8N_HOST=n8n.domainanda.com`
     - `POSTGRES_USER=elgroup_user`
     - `POSTGRES_PASSWORD=PasswordAman123!`
-    - `TELEGRAM_BOT_TOKEN=8791438411:AAFKzCvX3g4xh3IW6V5jqzoc7SxDOqR_Pns`
+    - `TELEGRAM_BOT_TOKEN=8652306942:AAFjb3sY4U0qqWBOvC9DF0BovHs6yDe4zn4`
     - `OPENAI_API_KEY=sk-proj-xxxx...`
-    - `ADMIN_TELEGRAM_ID=5437246207`
+    - `ADMIN_TELEGRAM_ID=8965842613`
   - Simpan: `Ctrl + O`, `Enter`. Keluar: `Ctrl + X`.
 
 - [ ] **3.3. Set Domain Nginx di VPS**
@@ -180,7 +180,7 @@ Gunakan fitur checklist markdown (`- [x]`) untuk menandai setiap langkah yang se
 - [ ] **6.1. Set Telegram Webhook**
   - Buka URL ini di browser:
     ```text
-    https://api.telegram.org/bot8791438411:AAFKzCvX3g4xh3IW6V5jqzoc7SxDOqR_Pns/setWebhook?url=https://n8n.domainanda.com/webhook/telegram-webhook
+    https://api.telegram.org/bot8652306942:AAFjb3sY4U0qqWBOvC9DF0BovHs6yDe4zn4/setWebhook?url=https://n8n.domainanda.com/webhook/telegram-webhook
     ```
   - Pastikan muncul respon `{"ok": true, "result": true}`.
 

@@ -22,11 +22,11 @@ services:
     container_name: entertainment_n8n
     restart: always
     environment:
-      - N8N_HOST=${N8N_HOST:-n8n.madamtikael.id}
+      - N8N_HOST=${N8N_HOST:-n8n.madamvita.com}
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
-      - WEBHOOK_URL=https://${N8N_HOST:-n8n.madamtikael.id}/
+      - WEBHOOK_URL=https://${N8N_HOST:-n8n.madamvita.com}/
       - GENERIC_TIMEZONE=Asia/Jakarta
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       - N8N_DIAGNOSTICS_ENABLED=false

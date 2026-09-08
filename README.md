@@ -112,7 +112,7 @@ Pastikan `entertainment_db`, `entertainment_n8n`, dan `entertainment_nginx` bers
 1. **Uji Command**: Buka bot di Telegram, ketik `/start`. Keyboard menu EL Group akan langsung muncul!
 2. **Uji Barcode Masuk**: Tekan tombol `🎫 Barcode Masuk` -> Pilih outlet -> Bot akan mengecek status barcode valid hari ini (expired setiap jam 02.00 WIB).
 3. **Uji AI Knowledge**: Ketik pertanyaan bebas seperti *"Jam buka El Norte jam berapa?"* atau *"Ada paket estafet gak?"*. AI akan menjawab secara cerdas berdasarkan database tanpa mengarang.
-4. **Uji Admin Lead Handover**: Jika user bertanya *"Saya mau booking room di El Seven untuk besok"*, AI akan memicu `[NEED_ADMIN]` dan notifikasi lead langsung terkirim ke Admin Telegram ID (`5437246207`).
+4. **Uji Admin Lead Handover**: Jika user bertanya *"Saya mau booking room di El Seven untuk besok"*, AI akan memicu `[NEED_ADMIN]` dan notifikasi lead langsung terkirim ke Admin Telegram ID (`8965842613`).
 5. **Uji Admin Update Barcode**: Ketik `/updatebarcode` di Telegram dari akun Admin untuk mengunggah foto barcode cabang terbaru.
 
 ---
